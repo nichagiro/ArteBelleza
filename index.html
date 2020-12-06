@@ -246,16 +246,14 @@
 				</div>
 			</div>
 			<div class="contactform-bubble">
-				<form autocomplete="off" class="contactform" method="post" action="contact.php" id="contactform">
-					<input name="name" type="text" placeholder="Nombre">
-					<input name="email" type="text" placeholder="Correo">
-					<textarea name="comment" placeholder="mensaje" rows="4"></textarea>
-					<input value="Enviar" type="submit" id="submit" class="btnsend">
-					<div class="done">
-						<div class="alert-box success">
-							<i>Mensaje enviado.</i>
-						</div>
-					</div>
+				<div style="width: 100%; text-align: center; display: none; margin-top: 9rem;" id="alert-box success">
+					<b>Correo Enviado</b>
+				</div>
+				<form autocomplete="off" class="contactform"  id="contactform">
+					<input name="name" type="text" placeholder="Nombre" required>
+					<input name="email" type="text" placeholder="Correo" required>
+					<textarea name="comment" placeholder="mensaje" rows="4" required></textarea>
+					<input value="Enviar" type="submit"  class="btnsend">
 				</form>
 			</div>
 			<div class="contactaddress-bubble">
